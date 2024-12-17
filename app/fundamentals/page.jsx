@@ -60,13 +60,12 @@ const items = [
         For example, you might add a custom command getData that gets an element by data-test`,
         id: '8',
       },
-    
   ]
 
-export default function FundamentalsPage(){
+export default function FundamentalsPage() {
     return (
         <main className={styles.main}>
-            <h1 className={styles.header}>
+            <h1 data-test="fundamental-header" className={styles.header}>
                 Testing Fundamentals
             </h1>
             <ItemsAccordion items={items} />
